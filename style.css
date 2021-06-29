@@ -1,0 +1,187 @@
+/*REGLAS GENERALES*/
+*, *::after,*::before{margin: 0;padding: 0;box-sizing: border-box;color: #fff;}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance: none;margin: 0;}
+/*  MI NAV BAR */
+.nav-container{background: rgb(1,8,28);background: radial-gradient(circle, rgba(1,8,28,1) 0%, rgba(3,0,22,1) 100%);height: 64px;width: 100%;position: absolute;border-bottom: 90px solid #01081c;}
+/*UL*/
+.nav-container .menu-container{list-style: none; display: flex;height: 64px; width: 100%;}
+/*LI*/
+.nav-container .menu-container .menu-item{position: relative;left: 300px; bottom: 50px;height: 30px;}
+/*A*/
+.nav-container a{bottom: 4px;position: relative;color: #f9f9f9;text-decoration: none;font-size: 1.2em;margin-left: 10px;padding: 2px 8px;justify-content: space-between;}
+/*TEXTO*/
+.nav-container label{font-family: sans-serif;font-size: 2.3em;font-weight: 900;color: #f9f9f9}
+/*LOGO*/
+.nav-container label .logo{position: relative;width: 50px;}
+/*IDIOMA*/
+.nav-container .languageES{width: 55px;position: absolute;right: 15px;top: 5px;}
+/*TODO EL TAMAÑO DEL SITIO*/
+section{height: 100vh;width: 100%;background: rgb(1,8,28);background: linear-gradient(257deg, rgba(1,8,28,1) 100%, rgba(22,21,34,1) 0%);}
+/*EFECTO FONDO TRANSPARENTE*/
+.effect{background: #16152291;height: 90vh;top: 10vh;position: relative;width: 100%;}
+/* PRIMER PLANTILLA*/   
+.first{border-radius: 10px;margin: auto;left: 100px;padding: 10px;top: 75px;position: absolute;height: 690px;background: #090909;}
+/* ¿CÚANTO QUIERES INVERTIR?*/
+.first label{display: flex;justify-content: center;text-align: center;font-weight: 600;font-size: 3em;color: #f0f0f0;}
+/*IMAGEN MONEDA*/
+.container .dinero{width: 70px;left: 350px;bottom: 15px;position: relative;}
+/*PLANTILLA SECUNDARIA*/
+.first-second {border-radius: 15px;height: 120px;background: #191919;width: 30px;top: 50px;position: relative;}
+/*DESDE*/
+.from{font-size: .3em; font-weight: 500; display: block; position: relative;right: 150px;top: 25px;}
+/*HASTA*/
+.to{font-size: .5em; font-weight: 600; display: block; position: relative;right: 195px;top: 40px;}
+/* PROMPT INPUT*/
+.input-from{font-size: 4.5em;color: #fff;height: 70px;width: 300px;left: 50px;top: 1px;position: inherit;background: rgba(0, 0, 0, 0);outline: none;border: none;}
+.input-to{font-size: 4.5em;color: #fff;height: 70px;width: 300px;left: 50px;top: 1px;position: inherit;background: rgba(0, 0, 0, 0);outline: none;border: none;}
+/* FIRST THIRD*/
+.first-third{right: 20%;top: 20px; position: absolute;height: 80px;width: 461px;background: #090909;border-radius: 15px;}
+.second-third{right: 20%;top: 20px; position: absolute;height: 80px;width: 461px;background: #090909;border-radius: 15px;}
+/* SECOND CONTAINER*/
+.second-second{border-radius: 15px;height: 120px;background: #191919;width: 30px;top: 90px;position: relative;}
+/*ARROWS PARRA CONVERTIR*/
+.exchange{width: 70px;}
+/* CIRCULO DE LAS FLECHAS PARA CONVERTIR EL DINERO*/
+.circle{left: 374px;z-index: 1;transform: rotate(90deg);position: inherit;top: 240px;border-radius: 50%;background: #909090;height:70px;width: 70px;}
+.box{width: 100px;height: 90px;position: inherit;left: 335px;top: 23px; background: #212121; outline: none;border: none;}
+.chip{width: 70px;}
+/* FROM 2 TO 2*/
+.from1{font-size: .3em; font-weight: 500; display: block; position: relative;right: 120px;bottom: 50px;}
+/*HASTA*/
+.to2{font-size: .4em; font-weight: 600; display: block; position: relative;right: 165px;bottom: 25px; border: 1px solid black;border-radius: 50%; cursor: pointer;}
+/* BOTON CONVERTIR*/
+.send{font-weight: 400;top: 150px;position: relative;height: 100px;background: #090909;outline: none;border: 5px solid #191919;color: #fff;font-size: 3em;text-transform:capitalize;}
+/* MI SPINNER*/
+#loading-container{background: rgba(250, 240, 245, 0.9);height: 100%;width: 100%;position: fixed;transition: all 1s ease;-webkit-transition: all 1s ease;-o-transition: all 1s ease;z-index: 2;}
+#loading{z-index: 2; border: 15px solid #ccc;border-top-color: #f4266a;border-top-style: groove;height: 100px;width: 100px;border-radius: 100%; position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;
+animation: girar 1.5s linear infinite; -o-animation: girar 1.5s linear infinite; -webkit-animation: girar 1.5s linear infinite;}
+@keyframes girar{from{transform: rotate(0deg);}to{transform: rotate(360deg);}}
+/* .first{} */
+.screen{ z-index: 3;display: none;left: 750px;font-size: .5em;font-weight: 500;color: #fff;position: absolute;background: #090909;height: 850px;width: 500px;top: 95px;}
+.screen div .wrapper{ max-height: 150px;overflow-y: scroll;}
+.screen .search{border: 4px solid red;color: #fff;width: 100%;height: 54px;background: #0000;}
+.screen .search .wrapper{position: relative;top: 500px;}
+.close{position:relative;width: 30px;left: 460px;bottom: 30px;cursor: pointer;}
+/*PANTALLA 2*/
+.app{z-index: 3;width: 100%;height: 100vh;position: absolute;top: 10vh;display: none;
+background: #000;}
+.flag{width: 45px; height: 45px;}
+.myClass1 b{font-size: 1.7em;font-weight: 400;color:#fff;}
+.sort-options{
+    color: #fff;
+    font-size: 1.5em;
+    justify-content: space-between;
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 20px;
+    display: flex;
+    width: 20%;}
+button{
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0) ;
+    z-index: 1;
+    bottom: 10px;
+    position: relative;flex: 1 1 33%;appearance: none;border: none;outline: none;padding: 0px 15px;margin: 0px 8px;font-size: 16px;font-weight: 700;text-transform: uppercase;cursor: pointer;}
+.list-headers{
+    background: #000;
+    display: block;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px auto 0px;
+    padding: 0px 15px;
+    font-weight: 700;
+    text-transform: uppercase;}
+.list{
+    background: #000;
+    height: 672px;
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;}
+.list-item{
+    top: 15px;
+    display: flex;
+    width: 316%;
+    left: -520px;
+    position: relative;
+    margin: 0 0;
+    padding:  15px;
+    border: 1px solid #171717;
+    border-radius: 8px;}
+.list .list-item div:nth-child(1),
+.list .list-item div:nth-child(2){
+    flex: 1;
+    display: flex;}
+.btn{
+    position: relative;
+    color: #fff;
+    width: 150px;
+    height: 70px;}
+.item-title{
+    display: flex;
+    text-align: center;
+    left: 80px;
+    position: absolute;
+    width: auto;}
+.item-img {
+    top: 0;
+    display: flex;
+    position: absolute;
+    width: auto;
+    min-width: 100px;}
+.item-img img{width: 50px;margin-right: 0;}
+.item-value{
+    width: auto;
+    top: 0;
+    display: flex;
+    position: relative;
+    left: 270px;}
+.item-ofert{
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    padding: 0 0;
+    width: auto;
+
+    font-size: .5em ;
+}
+.item-ofert a{
+    margin: 0 15px;
+    justify-content: space-between;
+}
+
+*{
+    max-width: auto;
+}
+.filter{
+    display: flex;    
+}
+.filter ul{
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    font-size: 3em;}
+.filter ul li{
+    margin-left: 50px;
+    font-size: .5em;
+    font-weight: 500;
+    padding: 0 0;
+}
+.tagOne{
+    left: 0px;
+    position: relative;
+}
+.tagTwo{
+    position: relative;
+    left: 60px;
+}
+
+.tagThree{
+    position: relative;
+    left: 130vh;
+}

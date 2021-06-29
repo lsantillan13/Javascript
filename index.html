@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>¿Cuánto me alcanza?</title>
+</head>
+    
+<body>
+    <!-- SPINNER -->
+    <div id="loading-container">
+    <div id="loading"></div>
+    </div>
+    <!-- SPINNER SCRIPT -->
+    <script>
+    window.onload = function () {
+        var contenedor = document.getElementById('loading-container');
+        contenedor.style.visibility = 'hidden';
+        contenedor.style.opacity = '0';}
+    </script>
+    <!-- NAV -->
+    <div class="container-fluid nav-container">
+        <label> <a href="index.html"><img class="logo" src="img/ice-creamm.png" alt="website-logo-ice-cream-png">Ice Cream</a></label>
+        <a href="index.html">App</a><a href="404.html">Tienda</a><a href="hola.html">Tiempo real</a>
+        <img class="languageES" src="img/spain.png" alt="spain-flag-spanish-language-png">
+    </div>
+    <!-- SECCION 1 DE LA APP -->
+    <section>
+        <div class="effect container-fluid"></div>
+        <div class="first container">
+        <label>¿Cuanto dinero piensas invertír?</label>
+        <div class="first-second container">
+            <label> <b class="from">Desde:</b> <b class="to">USD</b></label>
+            <img class="dinero" src="img/dinero.png" alt="coin-png-moneda-dolares-peso-imagen">
+            <div class="first-third">
+                <input id="myNumber" name="valor" class="input-from" type="number" placeholdeR="0.0">
+            </div>
+        </div>
+    <button class="send container" onclick="saldo();"> convertír</button>
+    </div>
+    </section>
+
+    <!-- SECCION 2 -->
+    <section id="template" class="app">
+        <div class="filter"> <ul><li class="tagOne">Moneda</li>  <li class="tagTwo">Valor</li> <li class="tagThree">Mejores ofertas</li></ul></div>
+        <section class="list-headers">
+        <section class="list"><div class="list-item"></div></section>
+        </section>
+        <!-- <div class="acciones"><h3>Acciones</h3></div> -->
+        <!-- DESAFIO ENTREGABLE ANIMACIONES -->
+        <!-- <button id="btn" class="btn">Animar</button>
+    <button id="btn1" class="btn">Animar</button> -->
+    </section>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/valores.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
+    </script>
+    <script>
+    alert('Gracias por usar mi aplicación.');
+    </script>
+</body>
+
+</html>
